@@ -1,0 +1,108 @@
+.container {
+  padding: 10rem 2rem;
+  text-align: center;
+
+  @media only screen and (max-width: 27em) {
+    padding: 2rem;
+  }
+
+  & > * {
+    margin-bottom: 2rem;
+    animation: fadein 1s;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+}
+
+.seewhy {
+  font-size: 3rem;
+  text-decoration: underline;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: khaki;
+  }
+}
+
+.button {
+  font-family: inherit;
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  background-color: khaki;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgb(180, 172, 106);
+  }
+}
+
+.correct {
+  background-color: #b4f8c8;
+  &:hover {
+    background-color: #b4f8c8;
+  }
+}
+
+.wrong {
+  background-color: #ffaebc;
+  &:hover {
+    background-color: #ffaebc;
+  }
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
+  gap: 2rem;
+
+  @media only screen and (max-width: 27em) {
+    grid-template-columns: max-content;
+  }
+}
+
+.explain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, max-content));
+  justify-content: center;
+  gap: 3rem;
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

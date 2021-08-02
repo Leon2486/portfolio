@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Zen Loop", cursive;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 90em) {
+    font-size: 50%;
+  }
+}

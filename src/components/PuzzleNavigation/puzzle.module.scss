@@ -1,0 +1,188 @@
+@mixin linear($deg, $background-position) {
+  display: flex;
+  color: transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+  background-size: 230%;
+  background-image: linear-gradient($deg, transparent 90%, #fff 10%);
+  background-position: $background-position;
+  transition: all 0.5s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  align-items: center;
+  padding: 0 10rem;
+
+  @media only screen and (max-width: 64em) {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  @media only screen and (max-width: 27em) {
+    padding: 5rem 1rem;
+    gap: 3rem;
+  }
+}
+
+.intro {
+  @media only screen and (max-width: 64em) {
+    grid-row: 1 /2;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+.puzzle {
+  height: 60%;
+  margin: 10rem auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 2fr);
+  grid-template-rows: 30% repeat(3, 1fr);
+
+  @media only screen and (max-width: 64em) {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 27em) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 10rem);
+  }
+
+  & > * {
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 3rem;
+    display: flex;
+    transition: all 0.5s;
+    position: relative;
+
+    div {
+      padding: 0.5rem;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      transition: filter 0.5s;
+    }
+
+    &:hover img {
+      filter: blur(2px);
+    }
+  }
+}
+
+.coding {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media only screen and (max-width: 27em) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  div {
+    @include linear(150deg, 0%);
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.coding:hover div {
+  background-position: 80%;
+  color: #000;
+}
+
+.personal {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media only screen and (max-width: 27em) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  div {
+    @include linear(150deg, 0%);
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+  }
+}
+
+.personal:hover div {
+  background-position: 92%;
+  color: #000;
+}
+
+.experience {
+  grid-column: 2 / 4;
+  grid-row: 2 / -1;
+
+  @media only screen and (max-width: 27em) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  div {
+    @include linear(-24deg, 60%);
+    top: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.experience:hover div {
+  background-position: 10%;
+  color: #000;
+}
+
+.language {
+  grid-column: 4 / -1;
+  grid-row: 2 / -1;
+
+  @media only screen and (max-width: 27em) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  align-items: flex-end;
+
+  div {
+    @include linear(-150deg, 80%);
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+.language:hover div {
+  background-position: 10%;
+  color: #000;
+}
+
+@keyframes showContainer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,48 @@
+@mixin work {
+  display: grid;
+  justify-items: center;
+  padding: 5rem 0;
+  gap: 2rem;
+
+  @media only screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    max-width: 60%;
+  }
+
+  @media only screen and (max-width: 27em) {
+    max-width: 80%;
+  }
+}
+
+.portfolio {
+  padding: 17rem 2rem;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  background-color: khaki;
+
+  @media only screen and (max-width: 48em) {
+    padding: 7rem 2rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.works {
+  @include work();
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.myworks {
+  @include work();
+  grid-template-columns: repeat(2, 1fr);
+}
