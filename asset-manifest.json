@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/potfolio/static/css/main.789a30d6.chunk.css",
+    "main.js": "/potfolio/static/js/main.eb4ed580.chunk.js",
+    "main.js.map": "/potfolio/static/js/main.eb4ed580.chunk.js.map",
+    "runtime-main.js": "/potfolio/static/js/runtime-main.f5ba3449.js",
+    "runtime-main.js.map": "/potfolio/static/js/runtime-main.f5ba3449.js.map",
+    "static/js/2.0971c434.chunk.js": "/potfolio/static/js/2.0971c434.chunk.js",
+    "static/js/2.0971c434.chunk.js.map": "/potfolio/static/js/2.0971c434.chunk.js.map",
+    "index.html": "/potfolio/index.html",
+    "static/css/main.789a30d6.chunk.css.map": "/potfolio/static/css/main.789a30d6.chunk.css.map",
+    "static/js/2.0971c434.chunk.js.LICENSE.txt": "/potfolio/static/js/2.0971c434.chunk.js.LICENSE.txt",
+    "static/media/Ani-mate.bce81a6c.JPG": "/potfolio/static/media/Ani-mate.bce81a6c.JPG",
+    "static/media/BOKO.1bebdce6.JPG": "/potfolio/static/media/BOKO.1bebdce6.JPG",
+    "static/media/Natour.25f4ce78.JPG": "/potfolio/static/media/Natour.25f4ce78.JPG",
+    "static/media/Nexter.0451770b.JPG": "/potfolio/static/media/Nexter.0451770b.JPG",
+    "static/media/coding.1e666016.jpg": "/potfolio/static/media/coding.1e666016.jpg",
+    "static/media/experience.207d0020.jpg": "/potfolio/static/media/experience.207d0020.jpg",
+    "static/media/language.40848238.jpg": "/potfolio/static/media/language.40848238.jpg",
+    "static/media/myPhoto.3e75eae1.jpg": "/potfolio/static/media/myPhoto.3e75eae1.jpg",
+    "static/media/personal.f4a81170.jpg": "/potfolio/static/media/personal.f4a81170.jpg",
+    "static/media/trillo.5dae44d0.JPG": "/potfolio/static/media/trillo.5dae44d0.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5ba3449.js",
+    "static/js/2.0971c434.chunk.js",
+    "static/css/main.789a30d6.chunk.css",
+    "static/js/main.eb4ed580.chunk.js"
+  ]
+}
