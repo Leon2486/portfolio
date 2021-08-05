@@ -1,21 +1,34 @@
-@mixin linear($deg, $background-position) {
+@mixin text() {
   display: flex;
   color: transparent;
   position: absolute;
   right: 0;
-  bottom: 0;
 
   width: 100%;
-  height: 100%;
-  background-size: 230%;
-  background-image: linear-gradient($deg, transparent 90%, #fff 10%);
-  background-position: $background-position;
   transition: all 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(#fff, 0.5);
+
+    transition: all 0.7s;
+  }
+
+  @media only screen and (max-width: 64em) {
+    font-size: 5rem;
+  }
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  min-height: 50vh;
   gap: 10rem;
   align-items: center;
   padding: 0 10rem;
@@ -25,7 +38,7 @@
     align-items: start;
   }
 
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 40em) {
     padding: 5rem 1rem;
     gap: 3rem;
   }
@@ -67,7 +80,12 @@
     position: relative;
 
     div {
+      @include text();
       padding: 0.5rem;
+
+      span {
+        z-index: 10;
+      }
     }
 
     img {
@@ -79,6 +97,14 @@
 
     &:hover img {
       filter: blur(2px);
+    }
+
+    &:hover div {
+      color: black;
+    }
+
+    &:hover div::before {
+      width: 100%;
     }
   }
 }
@@ -96,15 +122,10 @@
   }
 
   div {
-    @include linear(150deg, 0%);
+    bottom: 0;
     align-items: flex-end;
     justify-content: flex-end;
   }
-}
-
-.coding:hover div {
-  background-position: 80%;
-  color: #000;
 }
 
 .personal {
@@ -120,16 +141,10 @@
   }
 
   div {
-    @include linear(150deg, 0%);
+    bottom: 0;
     align-items: flex-end;
     justify-content: flex-end;
-    height: 100%;
   }
-}
-
-.personal:hover div {
-  background-position: 92%;
-  color: #000;
 }
 
 .experience {
@@ -142,16 +157,10 @@
   }
 
   div {
-    @include linear(-24deg, 60%);
     top: 0;
     align-items: flex-start;
     justify-content: flex-start;
   }
-}
-
-.experience:hover div {
-  background-position: 10%;
-  color: #000;
 }
 
 .language {
@@ -166,15 +175,10 @@
   align-items: flex-end;
 
   div {
-    @include linear(-150deg, 80%);
+    bottom: 0;
     align-items: flex-end;
     justify-content: flex-start;
   }
-}
-
-.language:hover div {
-  background-position: 10%;
-  color: #000;
 }
 
 @keyframes showContainer {

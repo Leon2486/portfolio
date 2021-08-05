@@ -48,28 +48,36 @@ export default function PuzzleNavigation() {
       <div className={style.puzzle} onClick={() => setModalOpen(true)}>
         <div className={style.coding} onClick={() => setGenre("codingLife")}>
           <img src={coding} alt="" />
-          <div className="">coding</div>
+          <div className="">
+            <span>coding</span>{" "}
+          </div>
         </div>
         <div
           className={style.personal}
           onClick={() => setGenre("personalLife")}
         >
           <img src={personal} alt="" />
-          <div className="">personal life</div>
+          <div className="">
+            <span>personal life</span>{" "}
+          </div>
         </div>
         <div
           className={style.experience}
           onClick={() => setGenre("workingExperience")}
         >
           <img src={experience} alt="" />
-          <div className="">experince</div>
+          <div className="">
+            <span>experince</span>{" "}
+          </div>
         </div>
         <div
           className={style.language}
           onClick={() => setGenre("languageLearning")}
         >
           <img src={language} alt="" />
-          <div className="">language</div>
+          <div className="">
+            <span>language</span>{" "}
+          </div>
         </div>
       </div>
       <div className={style.intro}>

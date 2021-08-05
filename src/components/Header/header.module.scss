@@ -4,7 +4,7 @@ header {
 
   animation: showHeader 1s;
 
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 40em) {
     margin-bottom: 3rem;
   }
 
@@ -28,7 +28,7 @@ header {
       grid-template-columns: repeat(3, 1fr);
       list-style: none;
 
-      @media only screen and (max-width: 27em) {
+      @media only screen and (max-width: 40em) {
         width: 100%;
       }
 

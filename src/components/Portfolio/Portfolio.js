@@ -32,7 +32,7 @@ const aboutMeInfo = [
   {
     content:
       "A forum page for animate lover to share their thoughts. Using material UI, firebase, react and redux to build",
-    url: "https://intense-reef-94096.herokuapp.com/",
+    url: "https://agitated-ride-94376e.netlify.app/",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function AboutMe() {
           title="Ani-mate"
           content={aboutMeInfo[4].content}
           img={Animate}
-          url={aboutMeInfo[2].url}
+          url={aboutMeInfo[4].url}
           show={showCard}
         />
       </div>

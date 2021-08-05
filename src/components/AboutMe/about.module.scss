@@ -10,7 +10,11 @@
     gap: 0;
     align-items: stretch;
   }
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 48em) {
+    padding: 7rem 0rem;
+  }
+
+  @media only screen and (max-width: 40em) {
     grid-template-columns: 1fr;
     padding: 0;
   }
@@ -25,7 +29,7 @@
   align-self: stretch;
   padding: 3rem;
 
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 40em) {
     padding: 3rem;
   }
 
@@ -48,7 +52,7 @@
     border-radius: 0;
   }
 
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 40em) {
     grid-row: 1 / 2;
   }
   img {

@@ -17,8 +17,8 @@
 .modal {
   position: relative;
   background-color: #fff;
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: min-content;
   border-radius: 3px;
   padding: 10rem;
 
@@ -29,8 +29,6 @@
   }
 
   @media only screen and (max-width: 27em) {
-    width: 80%;
-    height: min-content;
     padding: 5rem;
   }
 
@@ -56,8 +54,8 @@
 }
 
 .imageBox {
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   @media only screen and (max-width: 64em) {
     width: 30rem;
     height: 30rem;
