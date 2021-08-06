@@ -21,12 +21,12 @@ export default function Modal(props) {
           <span className={style.exit} onClick={() => setOpen(false)}>
             X
           </span>
-          <h2>{title}</h2>
+          <div className={style.imageBox}>
+            <img src={img} alt="" />
+          </div>
           <div className={style.content}>
+            <h2>{title}</h2>
             <p>{content}</p>
-            <div className={style.imageBox}>
-              <img src={img} alt="" />
-            </div>
           </div>
         </div>
       </div>

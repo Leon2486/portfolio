@@ -16,9 +16,7 @@ export default function ContactMe() {
           <h3>email</h3>
           <p>a5882352941176470@gmail.com</p>
           <h3>github</h3>
-          <p>a5882352941176470@gmail.com</p>
-          <h3>104</h3>
-          <p>a5882352941176470@gmail.com</p>
+          <p>https://github.com/Leon2486</p>
         </div>
       </div>
       <div className={style.imgBox}>
