@@ -27,7 +27,7 @@ const aboutMeInfo = [
   {
     content:
       "this project is inspired by rakuten kobo ebook online shop. Most of the function and templates of this project followed its design. Using react, redux, react-router and google auth to build the site",
-    url: "https://intense-reef-94096.herokuapp.com/",
+    url: "https://determined-brown-d1a91d.netlify.app/",
   },
   {
     content:
